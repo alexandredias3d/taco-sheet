@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 camelot-py = {extras = ["base"], version = "*"}
+requests = "*"
 
 [dev-packages]
 
