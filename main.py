@@ -1,6 +1,8 @@
 import camelot
 import requests
 
+from tables import MacroAndMicronutrientsTable, AminoAcidsTable
+
 
 class TACO:
     URL = 'https://www.nepa.unicamp.br/taco/contar/taco_4_edicao_ampliada_e_revisada.pdf?arquivo=1'
@@ -24,6 +26,6 @@ class TACO:
 if __name__ == '__main__':
     TACO.get_document()
 
-    tables = camelot.read_pdf(filepath=TACO.FILENAME, pages='all', flavor='stream')
+    tables = camelot.read_pdf(filepath=TACO.FILENAME, pages=MacroAndMicronutrientsTable().range(), flavor='stream')
 
     print()
