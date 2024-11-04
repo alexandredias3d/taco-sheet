@@ -2,7 +2,7 @@ import requests
 
 
 class TACO:
-    URL = 'https://www.nepa.unicamp.br/taco/contar/taco_4_edicao_ampliada_e_revisada.pdf?arquivo=1'
+    URL = 'https://nepa.unicamp.br/publicacoes/tabela-taco-pdf/'
     FILENAME = '_Taco_4_ed.pdf'
 
     @staticmethod
