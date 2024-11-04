@@ -11,7 +11,7 @@ There is no guarantee that the values were read correctly.
 
 ### Dependencies
 
-* Python >= 3.9
+* Python >= 3.11
 * Pipenv
 
 ### Installing
